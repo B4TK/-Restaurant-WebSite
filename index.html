@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+<script>	
+$(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 400){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+});
+</script>
+	
+<title></title>
+</head>
+
+<body>
+
+	<div id="header">
+		<h1 class="logo"><img src="img/logo.png" alt="logo"></h1>
+		<ul>
+			<li><a href="#concept">ー縁について</a></li>
+			<li><a href="#menu">ーお品書き</a></li>
+			<li><a href="#shop">ー販売雑貨</a></li>
+			<li><a href="#access">ー店舗案内</a></li>
+			<li><a href="#footer">ーお問い合わせ</a></li>
+		</ul>
+		<p class="copy">日本の主食。米本来の味ー</p>
+	</div>
+<div id="wrapper">
+	<div id="concept">
+		<hr>
+		<div class="contents_1">
+			<h2>釜戸ダイニング縁</h2>
+			<p>釜戸で炊く究極の銀シャリ<br>都会のど真ん中にご飯を薪で炊くおくどさんがあります。<br>薪割り、精米、米とぎ、火入れ。丁寧に朝夕、炊き上げています。<br>炊飯器で炊くよりは、手間はかかっていますが「たかがご飯。されどご飯」<br>その言葉通り、ただのご飯です。<br>でも一度食べてみてください。お米の味ってこんなだったなと認識します。</p>
+		</div>
+	</div>
+	
+	<div id="menu">
+		<h2 class="fadein"><img src="img/c2_menu.png"></h2>
+		<div class="contents_2">
+			<p>熊野街道の食材にこだわったメニューがずらり。<br>関西の味がココにあります。<br>南紀屈指の漁港より、獲れたての魚が毎日届きます。	</p>
+		
+			<a href="#" class="button" id="button1">お品書き</a>
+		</div>
+	</div>
+	
+	<div id="shop">
+		<div class="contents_3">
+			<p>オーナーのこだわりで集めた<br>雑貨を販売しています。</p>
+			<a href="#" class="button" id="button2">雑貨販売</a>
+		</div>
+		<div class="bg">
+		</div>
+	</div>
+
+	<div id="access">
+		<div class="access_bg"></div>
+		<h2 class="fadein"><img src="img/c4_access.png" width="1000px"></h2>
+		<div class="contents_4">
+		<p class="text">大阪のど真ん中、熊野街道に面するお店は、<br>一歩中に入ると 日本の昔と今がほどよく融合した<br>懐かしいようで新しい町家ごはんとお酒が楽しめるお店です。</p>
+		<div class="button3">
+			<a href="#" class="button" id="button3">店舗情報</a>
+		</div>
+		</div>
+		
+	</div>
+	
+</div>
+	
+	<div id="footer">
+		<div class="contents_footer">
+		<div class="left">
+			<h2><img src="img/logo.png">釜戸ダイニング縁</h2>
+			<p class="l">住所		：<br>営業時間	：<br><br>アクセス	：</p>
+			<p class="r">大阪市中央区上本町西２－６ー２４<br>11:30～14:00(L.O)<br>17:30～23:00 （L.O 22:00）<br>地下鉄谷町線谷町六丁目駅より徒歩約1分<br>谷町六丁目駅から184m</p>
+		</div>
+			
+		<div class="right">
+			<h3>ご予約はこちら</h3>
+			<div class="btn">
+			<div class="btn1"><p><a href="#">Webからご予約</a></p></div>
+			<div class="btn2"><a href="tel:06-0000-0000" class="buttonW2"><p>06-6763-0110</p></a></div>
+			</div>
+		</div>
+
+		<p class="copyright">Copyright@KamadodiningEn All right reserved.</p>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>
